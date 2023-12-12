@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="435.0" prefWidth="550.0" styleClass="new-window-border" stylesheets="@../com/pcc/sgs/styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pcc.sgs.controller.MidtermCalculatorController">
+   <children>
+      <VBox alignment="CENTER" layoutX="1.0" layoutY="-16.0" minWidth="400.0" prefHeight="360.0" prefWidth="548.0" AnchorPane.rightAnchor="1.0">
+         <children>
+            <Label text="Midterm Grade Calculator" textFill="#0071bc">
+               <font>
+                  <Font name="Roboto Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="50.0" prefWidth="498.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="108.0" text="Attendance" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="attendanceScoreTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="181.0" promptText="0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="attendanceTotalTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="208.0" promptText="0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="35.0" layoutY="63.0" prefHeight="51.0" prefWidth="498.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="108.0" text="Quizzes" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="quizScoreTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="184.0" promptText="0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="quizTotalTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="210.0" promptText="0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="35.0" layoutY="98.0" prefHeight="51.0" prefWidth="498.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="108.0" text="Assignments" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="assignmentScoreTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="186.0" promptText="0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="assignmentTotalTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="210.0" promptText="0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="35.0" layoutY="168.0" prefHeight="52.0" prefWidth="498.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="108.0" text="Exams" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="examScoreTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="182.0" promptText="0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="examTotalTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="209.0" promptText="0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="26.0" layoutY="383.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="498.0" spacing="20.0">
+         <children>
+            <Button fx:id="calculateButton" layoutX="327.0" layoutY="20.0" mnemonicParsing="false" onAction="#calculate" prefHeight="31.0" prefWidth="80.0" styleClass="savebutton" text="Calculate">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="saveOrUpdateButton" mnemonicParsing="false" onAction="#saveOrUpdate" prefHeight="31.0" prefWidth="99.0" styleClass="savebutton" text="Save/Update">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="closeWindow" alignment="CENTER" layoutX="129.0" layoutY="10.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="31.0" prefWidth="80.0" styleClass="cancelbutton" text="Cancel" textFill="#757575">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets right="1.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TextField fx:id="totalTextField" editable="false" layoutX="230.0" layoutY="333.0" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="132.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="equivalentTextField" editable="false" layoutX="384.0" layoutY="333.0" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="132.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="94.0" layoutY="339.0" prefHeight="35.0" prefWidth="119.0" text="Prelim Grade" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

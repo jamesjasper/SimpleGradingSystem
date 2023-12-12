@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1000.0" stylesheets="@../com/pcc/sgs/styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pcc.sgs.controller.StudentDashController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="150.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="NEVER">
+               <image>
+                  <Image url="@../com/pcc/sgs/img/pcc_logo.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="35.0" right="20.0" top="35.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" styleClass="wtext" text="Class Management" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="35.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Button alignment="BASELINE_LEFT" defaultButton="true" graphicTextGap="8.0" layoutX="10.0" layoutY="211.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" text="Dashboard">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Candara" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="8.0" layoutX="10.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#showClassesScreen" prefHeight="50.0" text="Classes">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Candara" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/online-learning.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="8.0" layoutX="10.0" layoutY="285.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#showStudentsScreen" prefHeight="50.0" styleClass="sidebar" stylesheets="@../com/pcc/sgs/styles/styles.css" text="Students">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/students.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="8.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#showGradesScreen" prefHeight="50.0" text="Grades">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/grades.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="exitBtn" alignment="BASELINE_LEFT" graphicTextGap="8.0" layoutX="10.0" layoutY="365.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#exitProgram" prefHeight="50.0" styleClass="exitBtn" text="Exit">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/closed.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="846.0">
+         <children>
+            <Pane layoutX="25.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="75.0" prefWidth="845.0" styleClass="header">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label id="title" fx:id="title" styleClass="title" text="Dashboard" textFill="#515151">
+                     <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="date" layoutX="16.0" layoutY="43.0" text="2020-08-27" textFill="#727272">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="userInfo" layoutX="431.0" layoutY="28.0" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="20.0" prefWidth="400.0" styleClass="user-info" text="Demo" textAlignment="CENTER" wrapText="true" />
+               </children>
+               <padding>
+                  <Insets right="20.0" top="15.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets right="25.0" />
+               </opaqueInsets>
+            </Pane>
+            <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="128.0" prefWidth="750.0" spacing="5.0">
+               <children>
+                  <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="70.0" prefWidth="130.0" styleClass="infoBlockVet">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label alignment="TOP_LEFT" layoutX="34.0" layoutY="14.0" text="My Classes" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="classNumber" alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="33.0" text="1" textFill="#c3deff">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="40.0" layoutY="40.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="70.0" prefWidth="130.0" styleClass="infoBlockPet">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label layoutX="29.0" layoutY="14.0" text="My Students" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="studentNumber" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="43.0" layoutY="33.0" text="1" textAlignment="CENTER" textFill="#cafffa">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <AnchorPane prefHeight="50.0" prefWidth="750.0" style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="20.0" layoutY="6.0" text="My Students" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="studentTableView" prefHeight="228.0" prefWidth="750.0">
+              <columns>
+                <TableColumn fx:id="studentIdColumn" text="Student ID" />
+                <TableColumn fx:id="studentFirstNameColumn" prefWidth="127.0" text="First Name" />
+                  <TableColumn fx:id="studentMiddleNameColumn" prefWidth="97.0" text="Middle Name" />
+                  <TableColumn fx:id="studentLastNameColumn" prefWidth="169.0" text="Last Name" />
+                  <TableColumn fx:id="studentCourseNameColumn" prefWidth="193.0" text="Course" />
+                  <TableColumn fx:id="studentYearLevelColumn" prefWidth="290.0" text="Year Level" />
+              </columns>
+            </TableView>
+            <AnchorPane layoutX="10.0" layoutY="228.0" prefHeight="49.0" prefWidth="750.0" style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="20.0" layoutY="6.0" text="Enrolled Classes" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="classTableView" prefHeight="251.0" prefWidth="750.0">
+              <columns>
+                <TableColumn fx:id="classIdColumn" prefWidth="81.0" text="ID" />
+                <TableColumn fx:id="courseCodeColumn" prefWidth="138.0" text="Course Code" />
+                  <TableColumn fx:id="courseNameColumn" prefWidth="364.0" text="Course Title" />
+                  <TableColumn fx:id="scheduleColumn" prefWidth="165.0" text="Schedule" />
+              </columns>
+            </TableView>
+            <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="750.0">
+               <children>
+                  <Button fx:id="setGradeButton" disable="true" layoutX="669.0" layoutY="11.0" mnemonicParsing="false" onAction="#showSetGradeWindow" prefHeight="33.0" prefWidth="117.0" text="Set Grade">
+                     <styleClass>
+                        <String fx:value="addbutton" />
+                        <String fx:value="button" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/grades.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" graphicTextGap="0.0" layoutX="794.0" layoutY="11.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#refreshWindow" prefHeight="31.0" prefWidth="38.0" styleClass="savebutton" textAlignment="CENTER" textOverrun="CLIP">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fx:id="refreshButton" fitHeight="80.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" graphicTextGap="5.0" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#showCreateStudentWindow" styleClass="addbutton" text="Create Student" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/addstudent.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="assignClassButton" disable="true" layoutX="534.0" layoutY="11.0" mnemonicParsing="false" onAction="#showAssignStudentWindow" styleClass="addbutton" text="Assign Class">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/online-learning.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="editStudentButton" alignment="CENTER" disable="true" graphicTextGap="5.0" layoutX="163.0" layoutY="9.0" mnemonicParsing="false" onAction="#showEditStudentWindow" styleClass="addbutton" text="Edit Student" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="deleteStudentButton" alignment="CENTER" disable="true" graphicTextGap="5.0" layoutX="292.0" layoutY="9.0" mnemonicParsing="false" onAction="#deleteStudent" styleClass="addbutton" text="Delete Student" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding></VBox>
+   </children>
+   <styleClass>
+      <String fx:value="mainWindow" />
+      <String fx:value="main-window-border" />
+   </styleClass>
+</AnchorPane>
