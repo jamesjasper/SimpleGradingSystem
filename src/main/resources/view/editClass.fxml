@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="260.0" prefWidth="400.0" styleClass="new-window-border" stylesheets="@../com/pcc/sgs/styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pcc.sgs.controller.EditClassController">
+   <children>
+      <VBox alignment="CENTER" minWidth="400.0" prefHeight="260.0" prefWidth="400.0">
+         <children>
+            <Label text="Edit Class" textFill="#0071bc">
+               <font>
+                  <Font name="Roboto Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="alertText" nodeOrientation="LEFT_TO_RIGHT" styleClass="alertText">
+               <graphic>
+                  <HBox prefHeight="41.0" prefWidth="350.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="106.0" text="Course Code">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="courseCodeTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="255.0" promptText="Enter Course Code">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </graphic></Label>
+            <HBox prefHeight="40.0" prefWidth="350.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="95.0" text="Course Name">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="courseNameTextField" maxHeight="35.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="241.0" promptText="Enter Course Name">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="350.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="95.0" text="Schedule">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="courseScheduleTextField" maxHeight="35.0" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="241.0" promptText="Enter Course Schedule">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
+               <children>
+                  <Button fx:id="updateButton" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="80.0" styleClass="savebutton" text="Update">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="cancelButton" alignment="CENTER" layoutX="129.0" layoutY="10.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="31.0" prefWidth="80.0" styleClass="cancelbutton" text="Cancel" textFill="#757575">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets right="1.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
